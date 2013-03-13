@@ -1,0 +1,97 @@
+load ~/.icbalias
+# old clear alias (hack)
+/alias clear ${K}${K}clear;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo;echo
+
+# raid #
+
+/alias raid
+{
+/nick SneakyHippie
+/g fflanda
+/topic Freak Hippie Accident
+/g bdbdbdbd
+/nick jpeace
+}
+
+
+# authorize me
+/alias auth
+{
+        /set display off
+        /msg server p flames
+        /echo   (doing auth)
+        /set display on
+}
+
+
+# clear alias so that after a /clear new text starts at the bottom instead of
+# at the top.
+/alias clear
+{
+        ${K}${K}clear
+        @count=100
+        while (count)
+        {
+                echo
+                @count=count-1
+        }
+}
+
+
+# take me home....
+/alias bd
+{
+        # join group slac
+        /join bdbdbdbd
+
+
+        # set idle-mod to maximum value
+        /msg server status im 0
+
+
+        # turn off idle boot
+        /msg server status b 0
+
+
+        # set a dumb topic
+        #/topic floccinaucinihilipilification 
+         /topic strategic canned meat reserves
+
+        # re authorize ourself when we go home to get any server-sent messages
+        /auth 
+}
+
+
+# silly defaults
+/alias do_init
+{
+        # get rid of the stupid + continuation foo
+        /set -continued_line
+
+
+        # indent instead of plus
+        /set indent on
+}
+
+/alias away
+{
+/m server away *examining infinity*
+}
+/alias noaway
+{
+/m server noaway
+}
+# this is the stuff we really do at logon
+/do_init
+/bd
+/m server shush -s *@*THATGROOVE.COM
+/m server shush -s *@*CCC.DE
+/m server shush -s *@*PROXAD.NET
+/m server shush -s *@*CTINETS.COM
+/m server shush -s *@*KUNDENCONTROLLER.DE
+/m server shush -s *@*ANONYMIZER*
+/m server shush -s *@*CLANSPUM.NET
+/m server shush -s *@*CUSSE.ORG
+/m server shush -s *@*.BEZEQINT.NET
+/m server shush -s *@129.89.26.105
+/m server shush -s *@2.9.354a.static.theplanet.com

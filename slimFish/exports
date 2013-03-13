@@ -1,0 +1,29 @@
+# Set the default editor
+if [ -f /usr/local/bin/subl ]; then
+    export EDITOR='subl -w'
+elif [ -f /usr/local/bin/mate ]; then
+    export EDITOR='mate'
+    export GIT_EDITOR='mate -wl1'
+else
+export EDITOR="vim"
+fi
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
+
+
+export HISTFILESIZE=3000
+export HISTSIZE=3000
+export HISTCONTROL=ignoredups:erasedups
+export HISTTIMEFORMAT="[$(tput setaf 6)%F %T$(tput sgr0)]: " # colorful date
+
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; echo -ne \"\033]0;${USER}@${HOSTNAME}\007\"; $PROMPT_COMMAND"
+
+
+export MULE_HOME="/opt/mule"
+export NODE_PATH="/usr/local/lib/node"
