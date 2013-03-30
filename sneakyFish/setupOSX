@@ -19,10 +19,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo spctl --master-disable
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "SlimFish"
-sudo scutil --set HostName "SlimFish"
-sudo scutil --set LocalHostName "SlimFish"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "SlimFish"
+sudo scutil --set ComputerName "SneakyFish"
+sudo scutil --set HostName "SneakyFish"
+sudo scutil --set LocalHostName "SneakyFish"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "SneakyFish"
 
 # Menu bar: disable transparency
 #defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool false
@@ -175,7 +175,7 @@ defaults write com.apple.finder FXPreferredViewStyle -string "clsv"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
 # Empty Trash securely by default
-defaults write com.apple.finder EmptyTrashSecurely -bool true
+defaults write com.apple.finder EmptyTrashSecurely -bool false
 
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
