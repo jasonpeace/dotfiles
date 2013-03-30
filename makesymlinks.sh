@@ -25,7 +25,7 @@ if [ ! -d "$dir" ]
 fi
 
 olddir=~/dotfiles_old # old dotfiles backup directory
-files="aliases bash_profile bashrc exports gitconfig gitignore hushlogin viminfo" # list of files/folders to symlink in homedir
+files="aliases bash_profile bashrc exports gitignore hushlogin viminfo" # list of files/folders to symlink in homedir
 
 ##########
 
