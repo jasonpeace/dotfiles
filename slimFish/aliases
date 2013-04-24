@@ -102,3 +102,4 @@ alias middleware="sudo cp /Users/jason/Documents/workspace/quartz-middleware/tar
 alias quartz="cd /Users/jason/Documents/workspace/quartz-frontend; foreman start -e development.env; cd -"
 alias qa="middleware; quartz;"
 alias qac="sudo -v; cd /Users/jason/Documents/workspace/quartz-middleware; mvn clean package; cd /Users/jason/Documents/workspace/quartz-frontend; mvn clean package; qa"
+alias puppetAgentPullNow="kill -USR1 puppet-agent"
