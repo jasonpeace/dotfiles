@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:.:$PATH
+export PATH=/usr/local/bin:.:/usr/local/share/npm/bin:$PATH
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
@@ -41,10 +41,14 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -f ~/.ssh/id_rsa ]; then
-ssh-add ~/.ssh/id_rsa
-fi
+# if [ -f ~/.ssh/id_rsa ]; then
+#  ssh-add ~/.ssh/id_rsa
+#  fi
 
 bind '"\e[A": previous-history'
+
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+    . $(brew --prefix)/share/bash-completion/bash_completion
+fi
 
 
