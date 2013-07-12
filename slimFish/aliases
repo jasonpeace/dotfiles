@@ -84,16 +84,7 @@ alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
-# Open a manpage in Preview, which can be saved to PDF
-function pman {
-   man -t "${1}" | open -f -a /Applications/Preview.app
-}
-if [[ "$OSTYPE" == "darwin"* ]]; then
-    alias man="pman"
-fi
-
-
-
+alias less="less -n"
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias fixdns='dscacheutil -flushcache'
 alias newMAC='ifconfig en0 ether 00:11:22:33:44:55'
@@ -103,3 +94,5 @@ alias quartz="cd /Users/jason/Documents/workspace/quartz-frontend; catalina stop
 alias qa="middleware; quartz;"
 alias qac="sudo -v; cd /Users/jason/Documents/workspace/quartz-middleware; mvn clean package; cd /Users/jason/Documents/workspace/quartz-frontend; mvn clean package; qa"
 alias puppetAgentPullNow="kill -USR1 puppet-agent"
+alias lessCat="less /usr/local/Cellar/tomcat/7.0.41/libexec/logs/catalina.out"
+alias tailCat="tail -f /usr/local/Cellar/tomcat/7.0.41/libexec/logs/catalina.out"
