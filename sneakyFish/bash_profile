@@ -47,9 +47,4 @@ fi
 
 
 
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 
-alias fixdns='dscacheutil -flushcache'
-#original mac ether b8:8d:12:2f:b5:72
-#alias newMAC='ifconfig en0 ether 00:11:22:33:44:55'
-alias newMAC="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//' | xargs sudo ifconfig en1 ether "
