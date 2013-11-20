@@ -1,0 +1,36 @@
+/set status_int_clock=''
+/set wrapspace 1
+/set isize 2
+/set emulation=ansi_attr
+/visual on
+/addworld  -T"tiny" jason jason ogolyjo gnosis.slac.com 7777
+/def joe = :[to Mr. Augst]: %{*}
+/def ball = `Ball %{*}
+/def bed =::'s bed comes to take him to his friends.
+/def msg = :[to %{1}]: %{-1}
+/def m = :[to %{1}]: %{-1}
+/def trepanate = !Note: Please remember to trepan %{*-Assballs}'s skull to relieve pressure.
+/def ponder= :ponders . o O ( %{*-thawing his brain} )
+/def plaster = :plasters a wall around %{*-himself}.
+/def boink = :boinks %{*-ASSBALLS} on the head.
+/def eye = :eyes %{*-the little green men} warily.
+/def eyes = :crosses his eyes at %{*-A Cyclops} warily.
+/def smoke = :rolls %{*-toonses the driving cat} up into a roll and smokes it.
+/def bake = :stirs %{*-the net} into a bowl of brownie mix and bakes it. Mmm brownies.
+/def weather = @pw
+/def berkeley = @pw berkeley, ca
+/def antarctica = @pw Amundsen-Scott, Antarctica
+/def juggle = :juggles %{*-invisible goblins} with his toes.
+/def -p90 -ahCblue -mglob -t'*\[to you]\*'
+/def -p90 -ahCcyan -mglob -t'*\[to yourself\]*'
+/def -p90 -ahCred -mglob -t'*whispers to you*'
+/def clue = :hands %{*-you} a clue. "On second thought... Take two, they're small."
+/def allah = !In the Name of Allah the Compassionate and the Merciful: %{*-make sense!} 
+/def throw = :throws %{*-Graham's Goat} over the fence onto Route 72!
+/def apparate = @move me to #681
+/def shake = :shakes %{*-the moo}, sets it down, and starts the timer.
+/def autobad = :enacts the autobad feature of %{*-the moo}.
+/def or = `chooser %{*-this or that?}
+/def obvious = yell The Zippy the Pinhead doll says\, \\"It\'s so OBVIOUS\!\!\\" at parkay
+/def tether = stand\nhit tether\nduck\nsit\n
+/def yell = :yells down over the edge, "%{*-PATAKI}"

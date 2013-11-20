@@ -1,0 +1,44 @@
+#	$Id: icb,v 1.4 1999/07/15 01:02:00 mrg Exp $
+#
+# icb support script
+
+# these should have better outputs.
+alias bcount ^icb msg server bcount
+alias boot ^icb boot
+alias brick ^icb msg server brick
+alias cancel ^icb cancel
+alias drop ^icb msg server drop
+alias echoback ^icb echo
+alias exclude ^icb msg server exclude $0-;echo [excluding $0] > $1-
+alias hush ^icb hush 
+alias nohush ^icb nohush 
+alias group ^icb group
+alias news ^icb msg server news
+alias nosecure ^icb msg server nosecure
+#alias notify ...!
+alias pass ^icb pass
+alias read ^icb msg server read
+alias register ^icb msg server p
+alias s_help ^icb msg server s_help
+alias secure ^icb msg server secure
+alias shuttime ^icb msg server shuttime
+alias status ^icb status
+alias whereis ^icb msg server whereis
+alias write ^icb msg server write
+alias btth ^icb btth 
+alias hug ^icb hug 
+alias smile ^icb smile 
+alias flirt ^icb flirt 
+alias confuse ^icb confuse 
+
+# special ones
+alias join if (servertype() == [ICB]) {^icb group $*}{${K}${K}join $*}
+alias topic if (servertype() == [ICB]) {^icb topic $*}{${K}${K}topic $*}
+alias who if (servertype() == [ICB]) {^icb who $*}{${K}${K}who $*}
+alias nick if (servertype() == [ICB]) {^icb nick $*}{${K}${K}nick $*}
+alias invite if (servertype() == [ICB]) {^icb invite $*}{${K}${K}invite $*}
+alias m ^icb msg server m 
+alias p ^icb msg server p
+alias q ^quit
+alias g ^icb group
+alias w ^icb who
