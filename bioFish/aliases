@@ -98,6 +98,8 @@ function newHostname(){
 	sudo scutil --set HostName "$1"
 }
 
+alias workoff='deactivate'
+
 
 
 

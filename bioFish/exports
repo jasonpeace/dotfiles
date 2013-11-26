@@ -26,3 +26,5 @@ export ARCHFLAGS="-arch x86_64"
 # export PROMPT_COMMAND="history -a; history -c; history -r; echo -ne \"\033]0;${USER}@${HOSTNAME}\007\"; $PROMPT_COMMAND"
 
 export WORKON_HOME=~/virtual-envs
+export DYLD_LIBRARY_PATH=/usr/local/lib
+
