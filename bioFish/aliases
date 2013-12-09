@@ -98,6 +98,15 @@ function newHostname(){
 	sudo scutil --set HostName "$1"
 }
 
+function src () {
+    cd ~/src/${1}
+}
+
+function ssrc () {
+    cd ~/src/${1}/${1}
+}
+
+
 alias workoff='deactivate'
 
 
