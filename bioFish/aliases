@@ -14,7 +14,7 @@ alias l="ls -l ${colorflag}"
 alias la="ls -la ${colorflag}"
 
 # List only directories
-alias lsd='ls -l ${colorflag} | grep "^d"'
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Always use color output for `ls`
 alias ls="command ls ${colorflag}"
@@ -100,12 +100,19 @@ function newHostname(){
 
 function src () {
     cd ~/src/${1}
+    echo -ne "\033]0;"${1}"\007"
 }
+complete -C "~/dotfiles/scripts/SrcCompletion" -o filenames -o nospace src
+
+complete -C "~/dotfiles/scripts/VirtCompletion" -o filenames -o nospace workon
 
 function ssrc () {
     cd ~/src/${1}/${1}
 }
 
+function renametab () {
+    echo -ne "\033]0;"$@"\007"
+}
 
 alias workoff='deactivate'
 

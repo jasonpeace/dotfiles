@@ -1,4 +1,4 @@
-export PATH=$PATH:.
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH:.
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
@@ -23,9 +23,7 @@ for option in autocd globstar; do
 shopt -s "$option" 2> /dev/null
 done
 
-# Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
+
 
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
@@ -53,6 +51,23 @@ pushdp() {
 
 title-term() {
     PROMPT_COMMAND="echo -ne '\033]0;${1}\007'"
+}
+
+rethump() {
+    src thumper-dev
+    echo "Dropping thumper database"
+    mysql -uroot --show-warnings --database=thumper -e "drop DATABASE thumper"
+    echo "Creating thumper database"
+    mysql -uroot --show-warnings -e "create DATABASE thumper"
+    echo "Cloning prod data into local thumper database"
+    mysql -uroot --show-warnings --database=thumper -e "source data/thumper_prod.sql"
+}
+
+fullthump() {
+    src thumper-dev
+    echo "Dumping Production Database"
+    scripts/dump-prod
+    rethump
 }
 
 source /usr/local/bin/virtualenvwrapper.sh

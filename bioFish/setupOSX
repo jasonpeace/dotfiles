@@ -152,6 +152,7 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
+
 # Disable disk image verification
 defaults write com.apple.frameworks.diskimages skip-verify -bool true
 defaults write com.apple.frameworks.diskimages skip-verify-locked -bool true
@@ -305,7 +306,7 @@ defaults write com.google.Chrome.canary ExtensionInstallSources -array "https://
 # my settings                                                                 #
 ###############################################################################
 
-# turn of recent list in vlc player 
+# turn of recent list in vlc player
 defaults write org.videolan.vlc NSRecentDocumentsLimit 0
 defaults write org.videolan.vlc.LSSharedFileList RecentDocuments -dict-add MaxAmount 0
 
