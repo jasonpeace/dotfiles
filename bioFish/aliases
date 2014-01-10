@@ -114,8 +114,20 @@ function renametab () {
     echo -ne "\033]0;"$@"\007"
 }
 
+function firefox(){
+    open -a Firefox "${1}"
+}
+
 alias workoff='deactivate'
 
+alias droptritondb="dropdb triton"
+
+function resetTriton(){
+    cd ~/src/triton-model/scripts
+    dropdb triton
+    psql < postgres-init.psql
+    cd -
+}
 
 
 
