@@ -94,6 +94,8 @@ alias newMAC="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//' | xargs sudo if
 
 ##alias newHostname="sudo scutil --set HostName my_new_name"
 
+alias killPYC='find ./ -name "*.pyc" | xargs rm'
+
 function newHostname(){
 	sudo scutil --set HostName "$1"
 }
@@ -127,6 +129,13 @@ function resetTriton(){
     dropdb triton
     psql < postgres-init.psql
     cd -
+}
+
+function redot(){
+    for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
+    [ -r "$file" ] && source "$file"
+    done
+    unset file
 }
 
 

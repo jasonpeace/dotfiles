@@ -70,6 +70,11 @@ fullthump() {
     rethump
 }
 
+fixtime() {
+    sudo launchctl stop org.ntp.ntpd
+    sudo launchctl start org.ntp.ntpd
+}
+
 source /usr/local/bin/virtualenvwrapper.sh
 
 
