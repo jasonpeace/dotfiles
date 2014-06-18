@@ -94,7 +94,9 @@ alias newMAC="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//' | xargs sudo if
 
 ##alias newHostname="sudo scutil --set HostName my_new_name"
 
-alias killPYC='find ./ -name "*.pyc" | xargs rm'
+alias killPYC='cd ~/src; find ./ -name "*.pyc" | xargs rm; cd -'
+#alias nosetests='nosetests --processes=5 --process-timeout=90'
+
 
 function newHostname(){
 	sudo scutil --set HostName "$1"
@@ -132,7 +134,7 @@ function resetTriton(){
 }
 
 function redot(){
-    for file in ~/.{extra,bash_prompt,exports,aliases,functions}; do
+    for file in ~/.{extra,bash_prompt,exports,aliases,functions,bash_profile}; do
     [ -r "$file" ] && source "$file"
     done
     unset file

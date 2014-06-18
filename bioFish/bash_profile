@@ -75,6 +75,12 @@ fixtime() {
     sudo launchctl start org.ntp.ntpd
 }
 
+require_find() {
+    cd /Users/jasonpeace/src
+    ~/dotfiles/scripts/require_find.py $1
+    cd -  >/dev/null 2>&1
+}
+
 source /usr/local/bin/virtualenvwrapper.sh
 
 
