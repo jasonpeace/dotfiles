@@ -95,7 +95,14 @@ alias newMAC="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//' | xargs sudo if
 ##alias newHostname="sudo scutil --set HostName my_new_name"
 
 function newHostname(){
+	sudo scutil --set ComputerName "$1"
 	sudo scutil --set HostName "$1"
+	sudo scutil --set LocalHostName "$1"
+	sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$1"
+}
+
+function unrarKeep(){
+    unrar e -kb "$1"
 }
 
 

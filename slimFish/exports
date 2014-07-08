@@ -27,3 +27,4 @@ export PROMPT_COMMAND="history -a; history -c; history -r; echo -ne \"\033]0;${U
 
 export MULE_HOME="/opt/mule"
 export NODE_PATH="/usr/local/lib/node"
+export ARCHFLAGS="-arch x86_64"

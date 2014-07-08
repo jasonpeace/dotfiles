@@ -1,4 +1,4 @@
-export PATH=$PATH:.
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH:.
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
@@ -37,9 +37,9 @@ complete -W "NSGlobalDomain" defaults
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer" killall
 
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
-fi
+if [ -f $(brew --prefix)/share/bash-completion/bash_completion ]; then
+    . $(brew --prefix)/share/bash-completion/bash_completion
+  fi
 
 # if [ -f ~/.ssh/id_rsa ]; then
 # ssh-add ~/.ssh/id_rsa
