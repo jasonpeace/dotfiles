@@ -140,5 +140,22 @@ function redot(){
     unset file
 }
 
+alias sql="mysql -h localhost -u root thumper"
 
+function jd() {
+nohup /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Commands/java -jar /Applications/JDownloader.app/Contents/java/app/JDownloader.jar  >/dev/null 2>&1 &
+}
+
+function m3u(){
+    find . -iname '*.flac' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
+    find . -iname '*.wav' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
+    find . -iname '*.mp3' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
+    find . -iname '*.m4a' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
+}
+
+function m3ud(){
+    cd ~/Downloads
+    m3u;
+    cd -
+}
 
