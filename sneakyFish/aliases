@@ -119,7 +119,8 @@ function upTraktor(){
     rsync -avt /Users/jp/Library/Preferences/com.native-instruments.* /Volumes/Macintosh\ HD-1/Users/jp/Library/Preferences/
     rsync -avt /Library/Application\ Support/Native\ Instruments/Traktor\ 2/ /Volumes/Macintosh\ HD-1/Library/Application\ Support/Native\ Instruments/Traktor\ 2
     rsync -avt /Users/jp/Documents/Native\ Instruments/Traktor\ 2.7.1/ /Volumes/Macintosh\ HD-1/Users/jp/Documents/Native\ Instruments/Traktor\ 2.7.1
-    rsync -avt /Users/jp/Documents/Native\ Instruments/Traktor\ 2.6.0/ /Volumes/Macintosh\ HD-1/Users/jp/Documents/Native\ Instruments/Traktor\ 2.6.0
+    #rsync -avt /Users/jp/Documents/Native\ Instruments/Traktor\ 2.6.0/ /Volumes/Macintosh\ HD-1/Users/jp/Documents/Native\ Instruments/Traktor\ 2.6.0
+
 }
 
 
