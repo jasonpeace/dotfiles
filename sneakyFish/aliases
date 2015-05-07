@@ -105,6 +105,21 @@ function unrarKeep(){
     unrar e -kb "$1"
 }
 
+alias upMusic="rsync -avt /Users/jp/Documents/Music/ /Volumes/Macintosh\ HD-1/Users/jp/Documents/Music"
 
+
+function jd() {
+nohup /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Commands/java -jar /Applications/JDownloader.app/Contents/java/app/JDownloader.jar  >/dev/null 2>&1 &
+}
+
+function upTraktor(){
+    upMusic
+    #rsync -avt /Applications/Native\ Instruments/Traktor\ 2/ /Volumes/Macintosh\ HD-1/Applications/Native\ Instruments/Traktor\ 2
+    rsync -avt /Library/Preferences/com.native-instruments.Traktor\ Pro\ 2.plist /Volumes/Macintosh\ HD-1/Library/Preferences/com.native-instruments.Traktor\ Pro\ 2.plist
+    rsync -avt /Users/jp/Library/Preferences/com.native-instruments.* /Volumes/Macintosh\ HD-1/Users/jp/Library/Preferences/
+    rsync -avt /Library/Application\ Support/Native\ Instruments/Traktor\ 2/ /Volumes/Macintosh\ HD-1/Library/Application\ Support/Native\ Instruments/Traktor\ 2
+    rsync -avt /Users/jp/Documents/Native\ Instruments/Traktor\ 2.7.1/ /Volumes/Macintosh\ HD-1/Users/jp/Documents/Native\ Instruments/Traktor\ 2.7.1
+    rsync -avt /Users/jp/Documents/Native\ Instruments/Traktor\ 2.6.0/ /Volumes/Macintosh\ HD-1/Users/jp/Documents/Native\ Instruments/Traktor\ 2.6.0
+}
 
 
