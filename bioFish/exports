@@ -1,5 +1,5 @@
 # Set the default editor
-# ln -s "/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+# ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
 if [ -f /usr/local/bin/subl ]; then
     export EDITOR='subl -w'
 elif [ -f /usr/local/bin/mate ]; then

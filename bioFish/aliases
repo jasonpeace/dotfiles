@@ -85,7 +85,7 @@ alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 #mine
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 alias fixdns='dscacheutil -flushcache'
 
 #original mac ether b8:8d:12:2f:b5:72
@@ -152,12 +152,42 @@ function m3u(){
     find . -iname '*.wav' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
     find . -iname '*.mp3' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
     find . -iname '*.m4a' -execdir bash -c 'file="{}"; printf "%s\n" "${file##*/}" >> "${PWD##*/}.m3u"' \;
-
 }
 
 function m3ud(){
     cd ~/Downloads
     m3u
     cd -
+}
+
+function pfd() {
+  osascript 2>/dev/null <<EOF
+    tell application "Finder"
+      return POSIX path of (target of window 1 as alias)
+    end tell
+EOF
+}
+
+function cdf() {
+  cd "$(pfd)"
+}
+
+function brewUpdatedToday(){
+    cpath="/usr/local/Cellar/"
+    count=`find $cpath -maxdepth 1 -type d -mtime -1 | wc -l`
+    if [ "$count" -gt "0" ]
+    then
+        echo "Packages updated today:"
+        list=`find $cpath -maxdepth 1 -type d -mtime -1`
+        echo -e "${list//$cpath\//}"
+    else
+        echo "Nothing to see here. Move along."
+    fi   
+}
+
+function upbrew(){
+    brew update -v
+    brew upgrade --all -v
+    brewUpdatedToday
 }
 
