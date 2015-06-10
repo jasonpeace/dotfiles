@@ -67,8 +67,17 @@ alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
 # Show/hide hidden files in Finder
-alias show="defaults write com.apple.Finder AppleShowAllFiles -bool true && killall Finder"
-alias hide="defaults write com.apple.Finder AppleShowAllFiles -bool false && killall Finder"
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool YES && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool NO && killall Finder"
+
+# Hide/show all desktop icons (useful when presenting)
+alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+
+# Disable Spotlight
+alias spotoff="sudo mdutil -a -i off"
+# Enable Spotlight
+alias spoton="sudo mdutil -a -i on"
 
 
 # PlistBuddy alias, because sometimes `defaults` just doesn’t cut it
@@ -190,4 +199,18 @@ function upbrew(){
     brew upgrade --all -v
     brewUpdatedToday
 }
+
+function uppip(){
+    if [[ "$VIRTUAL_ENV" != "" ]]
+    then
+        echo "In virtual-env:"
+        echo " $VIRTUAL_ENV"
+        pip install --upgrade pip setuptools virtualenv virtualenvwrapper
+    else
+        echo "running pip upgrade in sudo"
+        sudo pip install --upgrade pip setuptools virtualenv virtualenvwrapper
+        
+    fi
+}
+
 
