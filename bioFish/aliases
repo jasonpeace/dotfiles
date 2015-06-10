@@ -213,4 +213,8 @@ function uppip(){
     fi
 }
 
+alias findBadImagesHere='find . -name "*jpg" -exec jpeginfo -c {} \; | grep -E "WARNING|ERROR"'
+function findBadImageNamesHere(){
+    find . -name "*jpg" -exec jpeginfo -c {} \; | grep -E "WARNING|ERROR" | awk '{ print $1 }'
+}
 
