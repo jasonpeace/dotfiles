@@ -263,10 +263,7 @@ pf(){
 }
 
 htmlify_rst(){
-    rst_file=$1
-    rst_ext='.rst'
-    html_ext='.html'
-    html_file=${rst_file/$rst_ext/$html_ext}
+    html_file=${1/'.rst'/'.html'}
     rst2html.py $rst_file $html_file
 }
 
