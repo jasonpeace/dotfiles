@@ -39,3 +39,5 @@ export WORKON_HOME=~/virtual-envs
 # export ODBCINI=/usr/local/Cellar/unixodbc/2.3.2_1/etc/odbc.ini
 export PYTHONIOENCODING=utf-8
 
+export PROSIZE_UPLOADER="/Users/jasonpeace/src/superstrain-view/scripts/cpcr/prosize_uploader.py"
+

@@ -286,3 +286,10 @@ function psetup(){
 
 alias develop='psetup'
 
+function fix_brew_permissions(){
+    echo "Chowning /usr/local to $USER:admin"
+    sudo chown -R $USER:admin /usr/local
+    brew doctor
+}
+
+
