@@ -1,4 +1,4 @@
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH:.
+export PATH=/usr/local/sbin:/usr/local/opt/coreutils/libexec/gnubin:$PATH:.
 
 # Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases, and ~/.functions
 # ~/.extra can be used for settings you don’t want to commit
@@ -44,5 +44,6 @@ fi
 # fi
 
 source /usr/local/bin/virtualenvwrapper.sh
+[[ $- = *i* ]] && source ~/src/liquidprompt/liquidprompt
 
 

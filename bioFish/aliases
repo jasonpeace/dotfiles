@@ -104,7 +104,10 @@ alias newMAC="openssl rand -hex 6 | sed 's/\(..\)/\1:/g; s/.$//' | xargs sudo if
 ##alias newHostname="sudo scutil --set HostName my_new_name"
 
 alias killPYC='cd ~/src; find ./ -name "*.pyc" | xargs rm; cd -'
+alias killORIG='cd ~/src; find ./ -name "*.orig" | xargs rm; cd -'
 #alias nosetests='nosetests --processes=5 --process-timeout=90'
+
+alias pgcli_local="pgcli -h localhost -p 5432 -U jasonpeace"
 
 
 function newHostname(){
@@ -275,6 +278,7 @@ function psetup(){
         then
             echo "You are not in a source dir for a project.";
         else
+            killPYC
             cd $p1
             python setup.py develop
             cd -
@@ -288,7 +292,9 @@ alias develop='psetup'
 
 function fix_brew_permissions(){
     echo "Chowning /usr/local to $USER:admin"
-    sudo chown -R $USER:admin /usr/local
+    #sudo chown -R $USER:admin /usr/local
+    sudo chown -R $USER:admin /usr/local/bin
+    sudo chown -R $USER:admin /usr/local/share
     brew doctor
 }
 
