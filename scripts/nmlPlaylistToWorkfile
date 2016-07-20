@@ -1,0 +1,88 @@
+#!/usr/bin/python
+
+from xml.dom.minidom import parse
+import argparse
+import sys
+
+EPILOG = """ """
+
+def main(argv):
+
+   parser = argparse.ArgumentParser()
+   parser.description = 'Native Instrument History Parser'
+   parser.epilog = EPILOG
+
+   parser.add_argument(
+      '-f',
+      '--filename',
+      dest="filename",
+      help='filename of History file to parse',
+   )
+
+   parser.add_argument(
+      '-t',
+      '--threshold',
+      dest="threshold",
+      help='Min number of seconds to be included',
+   )
+
+
+
+   args = parser.parse_args()
+   count = 1
+
+   thresh = args.threshold
+
+
+   if args.filename:
+         file_handle = open(args.filename, 'r')
+         #file_contents = file_handle.read()
+
+         DOMTree = parse(file_handle)
+         collection = DOMTree.documentElement
+         
+         playlists = collection.getElementsByTagName("PLAYLIST")
+         entries = playlists[0].getElementsByTagName("ENTRY")
+
+         for entry in entries:
+            keys = entry.getElementsByTagName("PRIMARYKEY")
+
+            filename=keys[0].getAttribute("KEY")
+
+            extended_datas = entry.getElementsByTagName("EXTENDEDDATA")
+            duration = extended_datas[0].getAttribute("DURATION")
+
+            if thresh is not None:
+               if float(duration) > float(thresh):
+                  print "%s. %s" % (str(count).zfill(2) ,format_filename(filename))
+                  count=count+1 
+            else:
+               print "%s\t%s" % (format_duration(duration),format_filename(filename))          
+   else:
+      print "use -f to specify a filename"
+
+def trim_filename(filename):
+   return filename.split("/:")[-1]
+
+def format_filename(filename):
+   f = trim_filename(filename)
+   r = [".flac", ".mp3", "_"]
+   for item in r:
+      f = f.replace(item, "")
+   return f
+
+def format_duration(dur):
+   return dur.split(".")[0]
+   
+   
+
+def print_help_then_exit(parser, message=None):
+    if message is not None:
+        print message, "\n"
+    parser.print_help()
+    sys.exit()
+
+if __name__ == "__main__":
+    main(sys.argv[1:])
+
+
