@@ -136,23 +136,12 @@ function firefox(){
 
 alias workoff='deactivate'
 
-alias droptritondb="dropdb triton"
-
-function resetTriton(){
-    cd ~/src/triton-model/scripts
-    dropdb triton
-    psql < postgres-init.psql
-    cd -
-}
-
 function redot(){
     for file in ~/.{extra,bash_prompt,exports,aliases,functions,bash_profile}; do
     [ -r "$file" ] && source "$file"
     done
     unset file
 }
-
-alias sql="mysql -h localhost -u root thumper"
 
 function jd() {
 nohup /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Commands/java -jar /Applications/JDownloader.app/Contents/java/app/JDownloader.jar  >/dev/null 2>&1 &
@@ -233,23 +222,6 @@ title-term() {
     PROMPT_COMMAND="echo -ne '\033]0;${1}\007'"
 }
 
-rethump() {
-    src thumper-dev
-    echo "Dropping thumper database"
-    mysql -uroot --show-warnings --database=thumper -e "drop DATABASE thumper"
-    echo "Creating thumper database"
-    mysql -uroot --show-warnings -e "create DATABASE thumper"
-    echo "Cloning prod data into local thumper database"
-    mysql -uroot --show-warnings --database=thumper -e "source data/thumper_prod.sql"
-}
-
-fullthump() {
-    src thumper-dev
-    echo "Dumping Production Database"
-    scripts/dump-prod
-    rethump
-}
-
 fixtime() {
     sudo launchctl stop org.ntp.ntpd
     sudo launchctl start org.ntp.ntpd
@@ -297,5 +269,7 @@ function fix_brew_permissions(){
     sudo chown -R $USER:admin /usr/local/share
     brew doctor
 }
+
+alias nml="~/dotfiles/scripts/nmlPlaylistToWorkfile"
 
 
