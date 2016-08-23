@@ -273,3 +273,9 @@ function fix_brew_permissions(){
 alias nml="~/dotfiles/scripts/nmlPlaylistToWorkfile"
 
 
+
+if [ -e ~/.amyrisrc ]; then
+. ~/.amyrisrc
+fi
+
+
