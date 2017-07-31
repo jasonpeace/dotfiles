@@ -109,6 +109,11 @@ alias killORIG='cd ~/src; find ./ -name "*.orig" | xargs rm; cd -'
 
 alias pgcli_local="pgcli -h localhost -p 5432 -U jasonpeace"
 
+alias hginc="hg inc"
+
+alias appNap_OFF="defaults write NSGlobalDomain NSAppSleepDisabled -bool YES"
+alias appNap_ON="defaults write NSGlobalDomain NSAppSleepDisabled -bool NO"
+
 
 function newHostname(){
 	sudo scutil --set HostName "$1"
@@ -188,7 +193,7 @@ function brewUpdatedToday(){
 
 function upbrew(){
     brew update -v
-    brew upgrade --all -v
+    brew upgrade -v
     brewUpdatedToday
 }
 
@@ -271,11 +276,64 @@ function fix_brew_permissions(){
 }
 
 alias nml="~/dotfiles/scripts/nmlPlaylistToWorkfile"
+alias prettier='prettier --print-width 80 --tab-width 4'
+
+function git_ignore(){
+    echo "Ignoring any changes to tracked file: '$1'"
+    git update-index --assume-unchanged "$1"
+}
+
+function git_unignore(){
+    echo "Rewatching any changes to tracked file: '$1'"
+    git update-index --no-assume-unchanged "$1"
+}
+
+function git_list_ignored_files(){
+    echo 'Git is ignoring these files:'
+    git ls-files -v | grep -E "^[a-z]"
+}
 
 
+
+#grc stuff
+GRC=`which grc`
+if [ "$TERM" != dumb ] && [ -n "$GRC" ]
+then
+    alias colourify="$GRC -es --colour=auto"
+    alias configure='colourify ./configure'
+    alias diff='colourify diff'
+    alias make='colourify make'
+    alias gcc='colourify gcc'
+    alias g++='colourify g++'
+    alias as='colourify as'
+    alias gas='colourify gas'
+    alias ld='colourify ld'
+    alias netstat='colourify netstat'
+    alias ping='colourify ping'
+    alias traceroute='colourify /usr/sbin/traceroute'
+    alias head='colourify head'
+    alias tail='colourify tail'
+    alias dig='colourify dig'
+    alias mount='colourify mount'
+    alias ps='colourify ps'
+    alias mtr='colourify mtr'
+    alias df='colourify df'
+fi
 
 if [ -e ~/.amyrisrc ]; then
 . ~/.amyrisrc
 fi
 
+alias git_aliases='git config --get-regexp alias'
 
+alias ag="ag --ignore *gen* --ignore *vendor*"
+alias ff38="open -a /Applications/Firefox38.app/Contents/macOS/firefox --args -P ff388"
+alias firefox_default_profile="open -a /Applications/Firefox.app/Contents/macOS/firefox --args -P default"
+
+function brew_dep_list(){
+    while read cask; do
+        echo -n "$cask ->"; 
+        brew deps $cask | awk '{printf(" %s ", $0)}'; 
+        echo ""; 
+    done < <(brew list)
+}
