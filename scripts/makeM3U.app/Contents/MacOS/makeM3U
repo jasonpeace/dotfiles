@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/local/bin/bash --login
 cwd=$(pwd)
 if [ -e ~/.m3udirs ]
     then
