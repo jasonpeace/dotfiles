@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/bin/black --fast --target-version py27 "$@"
