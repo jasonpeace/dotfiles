@@ -35,7 +35,7 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+
 alias whois="whois -h whois-servers.net"
 
 # Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+alias flush="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
 
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
@@ -119,15 +119,15 @@ function newHostname(){
 	sudo scutil --set HostName "$1"
 }
 
-function src () {
+function ssrc () {
     cd ~/src/${1}
     echo -ne "\033]0;"${1}"\007"
 }
-complete -C "~/dotfiles/scripts/SrcCompletion" -o filenames -o nospace src
+complete -C "~/dotfiles/scripts/SrcCompletion" -o filenames -o nospace ssrc
 
 complete -C "~/dotfiles/scripts/VirtCompletion" -o filenames -o nospace workon
 
-function ssrc () {
+function sssrc () {
     cd ~/src/${1}/${1}
 }
 
@@ -188,7 +188,7 @@ function brewUpdatedToday(){
         echo -e "${list//$cpath\//}"
     else
         echo "Nothing to see here. Move along."
-    fi   
+    fi
 }
 
 function upbrew(){
@@ -206,7 +206,7 @@ function uppip(){
     else
         echo "running pip upgrade in sudo"
         sudo pip install --upgrade pip setuptools virtualenv virtualenvwrapper
-        
+
     fi
 }
 
@@ -261,7 +261,7 @@ function psetup(){
             cd -
         fi
     else
-        echo "You are not in a vitual env."    
+        echo "You are not in a vitual env."
     fi
 }
 
@@ -332,17 +332,18 @@ alias firefox_default_profile="open -a /Applications/Firefox.app/Contents/macOS/
 
 function brew_dep_list(){
     while read cask; do
-        echo -n "$cask ->"; 
-        brew deps $cask | awk '{printf(" %s ", $0)}'; 
-        echo ""; 
+        echo -n "$cask ->";
+        brew deps $cask | awk '{printf(" %s ", $0)}';
+        echo "";
     done < <(brew list)
 }
 
-alias rsync='/usr/local/Cellar/rsync/3.1.2/bin/rsync'
-alias rsync_photos='sudo /usr/local/Cellar/rsync/3.1.2/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20171030.photoslibrary /Volumes/Backup3/photos_backup'
-alias rsync_photos_remote='sudo /usr/local/Cellar/rsync/3.1.2/bin/rsync -PhaNHAXv  --delete --stats --bwlimit=8000 /Users/jasonpeace/Pictures/Photos\ Library\ 20171030.photoslibrary /Volumes/archive2/photos_backup'
+alias rsync='/usr/local/bin/rsync'
+alias rsync_photos='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20180930.photoslibrary /Volumes/Backup3/photos_backup'
+alias rsync_photos_remote='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats --bwlimit=8000 /Users/jasonpeace/Pictures/Photos\ Library\ 20180930.photoslibrary /Volumes/archive2/photos_backup'
 
-alias rsync_photos_pics='sudo /usr/local/Cellar/rsync/3.1.2/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20171030.photoslibrary /Volumes/pics'
+alias rsync_photos_pics='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20180930.photoslibrary /Volumes/pics'
+alias rsync_photos_external='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20190414.photoslibrary /Volumes/archive'
 
 alias makeM3u='/Users/jasonpeace/dotfiles/scripts/m3ud2.sh'
 
@@ -354,4 +355,21 @@ function suppress_vlc_error_window(){
     else
         echo "/Applications/VLC.app/Contents/Resources/English.lproj/ErrorPanel.nib was not found"
     fi
+}
+
+alias git_unstash="git stash apply stash@{0}"
+
+function git_delete_branch ()
+{
+    git checkout $1;
+    git pull;
+    git checkout master;
+    git branch -d $1;
+    git push origin :$1
+}
+
+function test_trs()
+{
+
+    curl -X POST -H "Content-Type: application/json" -d @./themis_test5.json http://vm:9003/themis_import_samples
 }
