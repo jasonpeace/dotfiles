@@ -339,11 +339,8 @@ function brew_dep_list(){
 }
 
 alias rsync='/usr/local/bin/rsync'
-alias rsync_photos='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20180930.photoslibrary /Volumes/Backup3/photos_backup'
-alias rsync_photos_remote='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats --bwlimit=8000 /Users/jasonpeace/Pictures/Photos\ Library\ 20180930.photoslibrary /Volumes/archive2/photos_backup'
-
-alias rsync_photos_pics='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20180930.photoslibrary /Volumes/pics'
-alias rsync_photos_external='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20190414.photoslibrary /Volumes/archive'
+alias rsync_photos='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20191107.photoslibrary /Volumes/archive/Pictures'
+alias rsync_tracks='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Documents/Music/tracks/ /Volumes/archive/Tracks'
 
 alias makeM3u='/Users/jasonpeace/dotfiles/scripts/m3ud2.sh'
 

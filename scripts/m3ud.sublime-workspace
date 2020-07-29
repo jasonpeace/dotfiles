@@ -1,0 +1,925 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"T",
+				"TableHeader"
+			],
+			[
+				"table",
+				"table-striped"
+			],
+			[
+				"hs",
+				"hasVisibleChildren"
+			],
+			[
+				"dst",
+				"dstForms"
+			],
+			[
+				"Property",
+				"PropertyDef"
+			],
+			[
+				"Mater",
+				"MaterialTransition"
+			],
+			[
+				"de",
+				"descendant_muid"
+			],
+			[
+				"workf",
+				"workflow_step_id"
+			],
+			[
+				"analyt",
+				"analytical_instrument"
+			],
+			[
+				"themis_t",
+				"themis_transition_type"
+			],
+			[
+				"No",
+				"NoResultFound"
+			],
+			[
+				"cal",
+				"calcAmount"
+			],
+			[
+				"RE",
+				"RecipePart"
+			],
+			[
+				"va",
+				"ValidationError"
+			],
+			[
+				"cur",
+				"curated_trs_concentrations"
+			],
+			[
+				"id",
+				"materialId"
+			],
+			[
+				"Cur",
+				"CurateTRSModal"
+			],
+			[
+				"run",
+				"run_on"
+			],
+			[
+				"att",
+				"attrdict"
+			],
+			[
+				"get",
+				"get_root_paths"
+			],
+			[
+				"work",
+				"workflow_step_id"
+			],
+			[
+				"find",
+				"find_one"
+			],
+			[
+				"CALCULATE",
+				"CALCULATED_TRS_POLLS"
+			],
+			[
+				"per",
+				"perseus_user"
+			],
+			[
+				"mati",
+				"materialCompleted"
+			],
+			[
+				"Statu",
+				"StatusEnum"
+			],
+			[
+				"fin",
+				"find_one"
+			],
+			[
+				"parent",
+				"parent_process"
+			],
+			[
+				"a",
+				"amount"
+			],
+			[
+				"cont",
+				"container_type"
+			],
+			[
+				"Propery",
+				"PropertyDef"
+			],
+			[
+				"Validat",
+				"ValidationError"
+			],
+			[
+				"json",
+				"jsonparam"
+			],
+			[
+				"data",
+				"data_sets"
+			],
+			[
+				"Recipe",
+				"RecipePart"
+			],
+			[
+				"Plate",
+				"PlateGeometry"
+			],
+			[
+				"en",
+				"entity_row_dto"
+			],
+			[
+				"Materi",
+				"MaterialType"
+			],
+			[
+				"recip",
+				"recipe_note_type"
+			],
+			[
+				"project",
+				"project_dto"
+			],
+			[
+				"project_dt",
+				"project_dto"
+			],
+			[
+				"Ma",
+				"Material"
+			],
+			[
+				"hy",
+				"hybrid_property"
+			],
+			[
+				"sel",
+				"select"
+			],
+			[
+				"colu",
+				"column_property"
+			],
+			[
+				"col",
+				"column_property"
+			],
+			[
+				"is",
+				"is_preferred"
+			],
+			[
+				"selected",
+				"selectedMultiplierTypeId"
+			],
+			[
+				"bypass",
+				"bypassDiluentRestriction"
+			],
+			[
+				"processTy",
+				"processTypeId"
+			],
+			[
+				"ances",
+				"ancestor_materials"
+			],
+			[
+				"sample",
+				"sample_amount_id"
+			],
+			[
+				"Sample",
+				"SampleAssayAmount"
+			],
+			[
+				"Ac",
+				"ACETONE_MATERIAL"
+			],
+			[
+				"ancestr",
+				"ancestor_lots"
+			],
+			[
+				"Tran",
+				"TransitionType"
+			],
+			[
+				"transitoin",
+				"transition_type"
+			],
+			[
+				"available",
+				"available_sample_types"
+			],
+			[
+				"Samp",
+				"SampleType"
+			],
+			[
+				"material",
+				"material_type"
+			],
+			[
+				"SPLIT_T",
+				"SPLIT_TO_TYPE_ID"
+			],
+			[
+				"transition",
+				"transition_type"
+			],
+			[
+				"S",
+				"SPLIT_TO_ROOT_TYPE_ID"
+			],
+			[
+				"process",
+				"processTypes"
+			],
+			[
+				"sele",
+				"selectedMultiplierTypeId"
+			],
+			[
+				"bul",
+				"bulkUpdateMaterialsProperty"
+			],
+			[
+				"e",
+				"exceptions"
+			],
+			[
+				"handleRange",
+				"handleRangeClick"
+			],
+			[
+				"handle",
+				"handleKeyDown"
+			],
+			[
+				"deselect",
+				"deselectAllHandler"
+			],
+			[
+				"mat",
+				"material_label"
+			],
+			[
+				"selectedM",
+				"selectedMultiplierTypeId"
+			],
+			[
+				"user",
+				"useHermes"
+			],
+			[
+				"con",
+				"container_label"
+			],
+			[
+				"samp",
+				"sample_note"
+			],
+			[
+				"proj",
+				"project_id"
+			],
+			[
+				"perseu",
+				"perseus_material_id"
+			],
+			[
+				"tra",
+				"trayLabel"
+			],
+			[
+				"select",
+				"selectedProjectId"
+			],
+			[
+				"themis",
+				"themis_domain"
+			],
+			[
+				"defal",
+				"defaultValue"
+			],
+			[
+				"def",
+				"defaultValue"
+			],
+			[
+				"In",
+				"IntegrityError"
+			],
+			[
+				"rel",
+				"relaxed_container_relations"
+			],
+			[
+				"manu",
+				"manufacturerId"
+			],
+			[
+				"Mate",
+				"MaterialType"
+			],
+			[
+				"materialT",
+				"materialTypeId"
+			],
+			[
+				"created",
+				"created_material"
+			],
+			[
+				"container",
+				"container_builder"
+			],
+			[
+				"Curs",
+				"CursorsComponent"
+			],
+			[
+				"escape",
+				"escapeCSSStr"
+			],
+			[
+				"hash",
+				"hashCode"
+			],
+			[
+				"valid",
+				"validate"
+			],
+			[
+				"allow",
+				"allowMultipleContainerTypes"
+			],
+			[
+				"all",
+				"allowMultipleContainerTypes"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"v",
+				"v4"
+			],
+			[
+				"get_container",
+				"get_container_or_raise"
+			],
+			[
+				"order",
+				"child_order"
+			],
+			[
+				"propert",
+				"property_assignment"
+			],
+			[
+				"ma",
+				"Material"
+			],
+			[
+				"render",
+				"renderOrganizations"
+			],
+			[
+				"g",
+				"get_generic_type"
+			],
+			[
+				"add",
+				"add_note"
+			],
+			[
+				"history",
+				"history_value"
+			],
+			[
+				"Hi",
+				"HistoryValue"
+			],
+			[
+				"Trans",
+				"TransitionAttachment"
+			],
+			[
+				"Transition",
+				"TransitionComment"
+			],
+			[
+				"cre",
+				"createdOn"
+			],
+			[
+				"srot",
+				"sortby"
+			],
+			[
+				"Data",
+				"DataSetsSection"
+			],
+			[
+				"td",
+				"td"
+			],
+			[
+				"in",
+				"interpret"
+			],
+			[
+				"ass",
+				"assert_command_or_plan_or_step"
+			],
+			[
+				"existing",
+				"existing_steps"
+			],
+			[
+				"dele",
+				"deletable_steps"
+			],
+			[
+				"exi",
+				"existing_commands"
+			],
+			[
+				"worker",
+				"worker_decl_expr"
+			],
+			[
+				"input",
+				"input_bindings"
+			],
+			[
+				"fina_",
+				"final_output"
+			],
+			[
+				"binding",
+				"binding_direction"
+			],
+			[
+				"bindin",
+				"binding_builder"
+			],
+			[
+				"Pros",
+				"ProsizePosition"
+			],
+			[
+				"P",
+				"PERCENT_CONCENTRATION"
+			],
+			[
+				"W",
+				"WELL_LABEL"
+			],
+			[
+				"step",
+				"step_index"
+			],
+			[
+				"complete",
+				"complete_task"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 337.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"black",
+				"Sublack: Format file"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prettier",
+				"Prettier: Format this file"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"tex",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"isort",
+				"Python Imports Sorter: sort imports"
+			],
+			[
+				"iso",
+				"ImportSort: Sort imports"
+			],
+			[
+				"is",
+				"ImportSort: Sort imports"
+			],
+			[
+				"sort",
+				"Python Imports Sorter: sort imports"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"tid",
+				"Tidy HTML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 446.0
+	},
+	"console":
+	{
+		"height": 68.0,
+		"history":
+		[
+			"print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"dh = hashlib.sha256(by).hexdigest();",
+			"by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"ipp = sublime.installed_packages_path();",
+			"pf = 'Package Control.sublime-package';",
+			"h='df21e130d211cfc94d9b0905775a7c0f1e3d39e33b79698005270310898eea76'",
+			"h=df21e130d211cfc94d9b0905775a7c0f1e3d39e33b79698005270310898eea76",
+			"print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"dh = hashlib.sha256(by).hexdigest();",
+			"by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read();",
+			"urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) );",
+			"ipp = sublime.installed_packages_path();",
+			"pf = 'Package Control.sublime-package';",
+			"h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d';",
+			"import urllib.request,os,hashlib;",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"sublime.log_indexing(True)",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/sortingtable.scss",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/services/themis.py",
+		"/Users/jasonpeace/src/triton-model/triton/model/data_type.py",
+		"/Users/jasonpeace/src/triton-model/triton/model/var.py",
+		"/Users/jasonpeace/src/triton-model/triton/model/task.py",
+		"/Users/jasonpeace/src/triton-model/triton/model/binding.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/recipe.py",
+		"/Users/jasonpeace/src/PCUBED/ci/ci.cfg",
+		"/Users/jasonpeace/src/strain-view/strain-view.cfg",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/package.json",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus.cfg",
+		"/Users/jasonpeace/src/triton-model/triton/model/worker.py",
+		"/Users/jasonpeace/src/triton-view/triton/view/worker.py",
+		"/Users/jasonpeace/src/sable/frontend/src/sable.jsx",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/TextInput.jsx",
+		"/Users/jasonpeace/src/amyris-util/frontend/src/text-input.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/plan/index.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/analytics/triton_prep.py",
+		"/Users/jasonpeace/.ssh/known_hosts",
+		"/Users/jasonpeace/src/WORKS/works-view/.git/MERGE_MSG",
+		"/Users/jasonpeace/Downloads/----- BEGIN LICENSE -----",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/lot/view.jsx",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/lib/themislib.py",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/webpack.config.js",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/package.json",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/__init__.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/webpack.config.js",
+		"/Users/jasonpeace/src/PCUBED/pegasus/ini/base.ini",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/plan/index.jsx",
+		"/Users/jasonpeace/src/sable/sable/__init__.py",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/templates/task/index.mako",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/templates/task/view.mako",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/templates/step/index.mako",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/task/view.py",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/templates/step/view.mako",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/step/index.py",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/step/view.py",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/task/index.py",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/plan/__init__.py",
+		"/Users/jasonpeace/src/strain-view/frontend/src/transform/cycle-view.jsx",
+		"/Users/jasonpeace/Library/Application Support/Sublime Text 3/Packages/User/JsPrettier.sublime-settings",
+		"/Users/jasonpeace/src/perseus/web/public/css/style.css",
+		"/Users/jasonpeace/Library/Application Support/Sublime Text 3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/plan/view.scss",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/recipe/view.jsx",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/templates/lot/view.mak",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/util.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/navbar.jsx",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/assay.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/lot/view.py",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/entries/plan-view.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/works/view/templates/plan/view.mako",
+		"/Users/jasonpeace/src/strain-view/superstrain/view/stitching/__init__.py",
+		"/Users/jasonpeace/src/strain-view/superstrain/view/transform/cycle.py",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/util.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/test/test-works-view.jsx",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/lot/themis.jsx",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/services/fermentation.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/lot/index.py",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/api/fermentation_api.py",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/lib/multiplier.py",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/.babelrc",
+		"/Users/jasonpeace/src/PCUBED/pegasus/themis_test2.json",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/test/report.xml",
+		"/Users/jasonpeace/src/WORKS/ci/ci.cfg",
+		"/Users/jasonpeace/src/amyris-util/frontend/test/test-amyris-util.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/test/report.txt",
+		"/Users/jasonpeace/src/amyris-util/amyris-util.cfg",
+		"/Users/jasonpeace/src/amyris-util/frontend/package.json",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/src/home.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/works-view.cfg",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/recipe/index.jsx",
+		"/Users/jasonpeace/src/WORKS/works-view/frontend/test_gen/test-works-view.js",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/recipe.py",
+		"/Users/jasonpeace/src/amyris-model/amyris/model/builder.py",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/container.py",
+		"/Users/jasonpeace/src/strain-view/superstrain/view/__init__.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/themis_test.json",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/migration/M006_add_QC_column_to_recipe.py",
+		"/Users/jasonpeace/src/ci/ci.cfg",
+		"/Users/jasonpeace/src/themis/util/init/functions.inc",
+		"/Users/jasonpeace/src/perseus/classes/perseus/smurf/om/BaseFatSmurfPeer.php",
+		"/Users/jasonpeace/src/perseus/classes/perseus/smurf/FatSmurfPeer.php",
+		"/Users/jasonpeace/src/perseus/controllers/servicesController.php",
+		"/Users/jasonpeace/src/themis/build/classes/themis/export/PerseusExport.php",
+		"/Users/jasonpeace/src/themis/conf/development/runtime.properties",
+		"/Users/jasonpeace/src/themis/conf/template/runtime.properties",
+		"/Users/jasonpeace/src/themis/conf/test/runtime.properties",
+		"/Users/jasonpeace/src/themis/conf/test_local/runtime.properties",
+		"/Users/jasonpeace/src/themis/conf/windows_development/runtime.properties",
+		"/Users/jasonpeace/src/themis/conf/staging/runtime.properties",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/Move.jsx",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/recipe/CreateEditModal.jsx",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/container_type.py",
+		"/Users/jasonpeace/src/strain-view/superstrain/view/worklist.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/move.py",
+		"/Users/jasonpeace/src/pegasus-dontuse/pegasus/view/move.py",
+		"/Users/jasonpeace/src/strain-view/README.md",
+		"/Users/jasonpeace/src/amyris-client/amyris/client/pegasus.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/pegasus/view/triton_view/services.py",
+		"/Users/jasonpeace/src/perseus/classes/perseus/smurf/SmurfPeer.php",
+		"/Users/jasonpeace/src/themis/util/init/smarty_constants.inc",
+		"/Users/jasonpeace/src/themis/util/init/constants.inc",
+		"/Users/jasonpeace/src/PCUBED/pegasus/frontend/src/lot/create-edit-modal.jsx",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/material.py",
+		"/Users/jasonpeace/src/PCUBED/pegasus/.git/MERGE_MSG",
+		"/Users/jasonpeace/src/themis/conf/classmap-themis-conf.php",
+		"/Users/jasonpeace/src/perseus/classes/perseus/goo/StrainCulture.php",
+		"/Users/jasonpeace/Downloads/clouseout-outline.txt",
+		"/Users/jasonpeace/src/pegasus/frontend/src/lot/curate-trs-modal.jsx",
+		"/Users/jasonpeace/src/pegasus/pegasus/view/triton_view/test/test_services.py",
+		"/Users/jasonpeace/src/perseus/build/classes/themis/export/PerseusExport.php",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/upstream.py",
+		"/Users/jasonpeace/src/pegasus-model/pegasus/model/test/test_upstream.py",
+		"/Users/jasonpeace/.aliases",
+		"/Users/jasonpeace/src/.dev_additions",
+		"/Users/jasonpeace/src/pegasus/pegasus/view/services/__init__.py",
+		"/Users/jasonpeace/src/pegasus/pegasus/view/services/themis.py",
+		"/Users/jasonpeace/src/pegasus/pegasus.cfg",
+		"/Users/jasonpeace/src/PCUBED/projectrc",
+		"/Users/jasonpeace/dotfiles/scripts/SrcCompletion",
+		"/Users/jasonpeace/src/pegasus/.git/MERGE_MSG",
+		"/Users/jasonpeace/src/pegasus/ini/production.ini.example",
+		"/Users/jasonpeace/Downloads/images/d1_01.gif",
+		"/Users/jasonpeace/src/pegasus/pegasus/view/material_type.py",
+		"/Users/jasonpeace/src/pegasus/frontend/src/Admin.jsx",
+		"/Users/jasonpeace/src/pegasus/pegasus/view/main.py",
+		"/Users/jasonpeace/src/pegasus/pegasus/view/__init__.py"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": true,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 106.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 33.0
+	},
+	"output.YAMLMacros":
+	{
+		"height": 82.0
+	},
+	"output.exec":
+	{
+		"height": 27.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 27.0
+	},
+	"pinned_build_system": "",
+	"project": "m3ud.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 204.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
