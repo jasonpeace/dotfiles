@@ -107,7 +107,7 @@ alias killPYC='cd ~/src; find ./ -name "*.pyc" | xargs rm; cd -'
 alias killORIG='cd ~/src; find ./ -name "*.orig" | xargs rm; cd -'
 #alias nosetests='nosetests --processes=5 --process-timeout=90'
 
-alias pgcli_local="pgcli -h localhost -p 5432 -U jasonpeace"
+alias pgcli_local="pgcli -h localhost -p 5432 -U peace"
 
 alias hginc="hg inc"
 
@@ -233,7 +233,7 @@ fixtime() {
 }
 
 require_find() {
-    cd /Users/jasonpeace/src
+    cd /Users/peace/src
     ~/dotfiles/scripts/require_find.py $1
     cd -  >/dev/null 2>&1
 }
@@ -339,10 +339,14 @@ function brew_dep_list(){
 }
 
 alias rsync='/usr/local/bin/rsync'
-alias rsync_photos='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Pictures/Photos\ Library\ 20191107.photoslibrary /Volumes/archive/Pictures'
-alias rsync_tracks='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/jasonpeace/Documents/Music/tracks/ /Volumes/archive/Tracks'
+alias rsync_photos='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/peace/Pictures/Photos\ Library\ 20210723.photoslibrary /Volumes/archive/Pictures'
 
-alias makeM3u='/Users/jasonpeace/dotfiles/scripts/m3ud2.sh'
+alias rsync_photos_biofish_to_media='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/peace/Pictures/Photos\ Library\ 20210723.photoslibrary /Volumes/archive2/photos_backup'
+
+
+alias rsync_tracks='sudo /usr/local/bin/rsync -PhaNHAXv  --delete --stats /Users/peace/Documents/Music/tracks/ /Volumes/archive/Tracks'
+
+alias makeM3u='/Users/peace/dotfiles/scripts/m3ud2.sh'
 
 function suppress_vlc_error_window(){
     if [ -e /Applications/VLC.app/Contents/Resources/English.lproj/ErrorPanel.nib ]
@@ -354,15 +358,16 @@ function suppress_vlc_error_window(){
     fi
 }
 
+alias fix_vlc="suppress_vlc_error_window"
+alias fix_audio="sudo killall -9 coreaudiod"
+
 alias git_unstash="git stash apply stash@{0}"
 
 function git_delete_branch ()
 {
-    git checkout $1;
-    git pull;
-    git checkout master;
+
     git branch -d $1;
-    git push origin :$1
+    git push origin --delete $1;
 }
 
 function test_trs()
@@ -370,3 +375,33 @@ function test_trs()
 
     curl -X POST -H "Content-Type: application/json" -d @./themis_test5.json http://vm:9003/themis_import_samples
 }
+
+function icb()
+{
+    irc -icb $1 default.icb.net 7326;
+}
+
+function validate_openapi ()
+{
+    java -jar ~/src/openapi-generator.jar validate -i $1
+}
+
+function disable_photo_analysis()
+{
+    launchctl disable user/$UID/com.apple.photoanalysisd
+    launchctl kill SIGTERM gui/$UID/com.apple.photoanalysisd
+}
+
+function enable_photo_analysis()
+{
+    launchctl enable user/$UID/com.apple.photoanalysisd
+    launchctl kckstart gui/$UID/com.apple.photoanalysisd
+}
+alias update-devscripts='docker pull git.amyris.local:4567/amyris/dev-scripts:latest'
+alias devscripts='docker run --volume=$(pwd):/app -it --rm git.amyris.local:4567/amyris/dev-scripts:latest'
+alias aformat='devscripts aformat'
+alias adr='devscripts adr'
+alias metadata='devscripts metadata'
+
+alias get_ips="netstat -nr -f inet"
+alias vertical_to_horizontal="/Users/peace/dotfiles/scripts/vtohwithcommas"

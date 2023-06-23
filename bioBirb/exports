@@ -1,0 +1,45 @@
+# Set the default editor
+# ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl
+if [ -f /usr/local/bin/subl ]; then
+    export EDITOR='subl -w'
+elif [ -f /usr/local/bin/mate ]; then
+    export EDITOR='mate'
+    export GIT_EDITOR='mate -wl1'
+else
+export EDITOR="vim"
+fi
+
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
+
+# Highlight section titles in manual pages
+export LESS_TERMCAP_md="$ORANGE"
+
+
+export HISTSIZE=32768
+export HISTFILESIZE=$HISTSIZE
+export HISTCONTROL=ignoredups:erasedups # no duplicate entries
+shopt -s histappend # append to history, don't overwrite it
+
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+# Always enable colored `grep` output
+export GREP_OPTIONS="--color=auto"
+
+export ARCHFLAGS="-arch x86_64"
+
+# Save and reload the history after each command finishes
+# export PROMPT_COMMAND="history -a; history -c; history -r; echo -ne \"\033]0;${USER}@${HOSTNAME}\007\"; $PROMPT_COMMAND"
+
+export WORKON_HOME=~/virtual-envs
+# export DYLD_LIBRARY_PATH=/usr/local/lib
+
+# export ODBCINI=/usr/local/Cellar/unixodbc/2.3.2_1/etc/odbc.ini
+export PYTHONIOENCODING=utf-8
+
+export PROSIZE_UPLOADER="/Users/jasonpeace/src/superstrain-view/scripts/cpcr/prosize_uploader.py"
+
+export QUOTING_STYLE=literal
+

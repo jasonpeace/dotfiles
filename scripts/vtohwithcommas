@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+import sys
+
+file1 = open(sys.argv[1], "r")
+lines = ["'{}'".format(line.strip("\n").strip("\"").strip("\'")) for line in file1 if line]
+print(",".join(lines))

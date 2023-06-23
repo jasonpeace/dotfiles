@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 from xml.dom.minidom import parse
 import argparse
@@ -54,12 +54,13 @@ def main(argv):
 
             if thresh is not None:
                if float(duration) > float(thresh):
-                  print "%s. %s" % (str(count).zfill(2) ,format_filename(filename))
+                  print("{}. {}".format(str(count).zfill(2) ,format_filename(filename)))
+
                   count=count+1 
             else:
-               print "%s\t%s" % (format_duration(duration),format_filename(filename))          
+               print("{}\t{}".format(format_duration(duration),format_filename(filename)))
    else:
-      print "use -f to specify a filename"
+      print("use -f to specify a filename")
 
 def trim_filename(filename):
    return filename.split("/:")[-1]
@@ -78,7 +79,7 @@ def format_duration(dur):
 
 def print_help_then_exit(parser, message=None):
     if message is not None:
-        print message, "\n"
+        print(message, "\n")
     parser.print_help()
     sys.exit()
 
